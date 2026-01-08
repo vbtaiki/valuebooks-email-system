@@ -507,22 +507,22 @@ def main():
             if st.button("🤖 GPT-4でメール生成", type="primary", use_container_width=True):
                 prompt = generate_email_prompt(c, selected['email_type'], selected['reason'], warehouse, blog)
                 
-            with st.spinner("生成中..."):
-                response, error = generate_with_gpt(prompt, api_key)
-                
-                if error:
-                    st.error(f"エラー: {error}")
-                else:
-                    subject, body = parse_email(response)
-                    st.session_state.generated_email = {
-                        'to': c['メールアドレス'],
-                        'name': c['氏名'],
-                        'subject': subject,
-                        'body': body,
-                        'type': selected['email_type'],
-                        'prompt': prompt
-                    }
-                    st.rerun()
+                with st.spinner("生成中..."):
+                    response, error = generate_with_gpt(prompt, api_key)
+                    
+                    if error:
+                        st.error(f"エラー: {error}")
+                    else:
+                        subject, body = parse_email(response)
+                        st.session_state.generated_email = {
+                            'to': c['メールアドレス'],
+                            'name': c['氏名'],
+                            'subject': subject,
+                            'body': body,
+                            'type': selected['email_type'],
+                            'prompt': prompt
+                        }
+                        st.rerun()
         else:
             st.button("🤖 GPT-4でメール生成", disabled=True, use_container_width=True)
             st.caption("APIキーを設定してください")
