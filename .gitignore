@@ -1,0 +1,34 @@
+# Secrets - 絶対にGitHubにアップロードしない！
+.streamlit/secrets.toml
+secrets.toml
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+*.so
+.eggs/
+*.egg-info/
+*.egg
+
+# Virtual Environment
+venv/
+ENV/
+env/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+
+# Logs
+*.log
+
+# Generated files
+ai_generated_emails.json
+generated_emails.json
+today_targets.csv
+

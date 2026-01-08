@@ -1,0 +1,113 @@
+{
+  "company_name": "バリューブックス",
+  "last_updated": "2026-01-08",
+  "blog_posts": [
+    {
+      "id": "B001",
+      "published_date": "2026-01-07",
+      "title": "本の森プロジェクト：10万冊達成のご報告",
+      "category": "CSR・社会貢献",
+      "summary": "皆様からお預かりした本を、全国の学校や図書館に届ける「本の森プロジェクト」が累計10万冊を達成しました。上田市の小学校では、子どもたちが目を輝かせて本を選ぶ姿が印象的でした。",
+      "sentiment": "positive",
+      "use_in_email": true,
+      "tone": "温かみ・感謝"
+    },
+    {
+      "id": "B002",
+      "published_date": "2026-01-05",
+      "title": "新年のご挨拶：2026年もよろしくお願いします",
+      "category": "お知らせ",
+      "summary": "明けましておめでとうございます。昨年は20万人以上のお客様にご利用いただきました。今年も「本で誰かを幸せに」をモットーに、スタッフ一同励んでまいります。",
+      "sentiment": "positive",
+      "use_in_email": true,
+      "tone": "新年の挨拶"
+    },
+    {
+      "id": "B003",
+      "published_date": "2026-01-03",
+      "title": "スタッフ座談会：印象に残った一冊",
+      "category": "スタッフブログ",
+      "summary": "年末年始恒例のスタッフ座談会。今年は「仕事中に思わず読みふけった一冊」をテーマに、倉庫スタッフ5名が語り合いました。古書の魅力を再発見する時間でした。",
+      "sentiment": "positive",
+      "use_in_email": true,
+      "tone": "親しみ・人間味"
+    },
+    {
+      "id": "B004",
+      "published_date": "2025-12-28",
+      "title": "年末大掃除で本の整理、いかがですか？",
+      "category": "買取促進",
+      "summary": "年末の大掃除シーズン。読まなくなった本は、次の読者へ届けてみませんか？段ボールに詰めて送るだけ。年末年始も休まず査定中です。",
+      "sentiment": "neutral",
+      "use_in_email": false,
+      "tone": "促進（送りすぎ注意）"
+    },
+    {
+      "id": "B005",
+      "published_date": "2025-12-25",
+      "title": "絵本の寄付で子どもたちにクリスマスプレゼント",
+      "category": "CSR・社会貢献",
+      "summary": "クリスマスに合わせて、児童養護施設に絵本500冊を寄贈しました。「サンタさんからの贈り物」として子どもたちに届けられ、笑顔があふれました。",
+      "sentiment": "positive",
+      "use_in_email": true,
+      "tone": "温かみ・社会貢献"
+    },
+    {
+      "id": "B006",
+      "published_date": "2025-12-20",
+      "title": "古書の価値を守る：修復チームの1日",
+      "category": "舞台裏",
+      "summary": "傷んだ古書を丁寧に修復するチームに密着。「本の命を次世代につなぐ」という職人たちのこだわりと技術をご紹介します。",
+      "sentiment": "positive",
+      "use_in_email": true,
+      "tone": "プロフェッショナル・こだわり"
+    }
+  ],
+  "current_campaigns": [
+    {
+      "id": "CP001",
+      "name": "新春ポイント2倍キャンペーン",
+      "start_date": "2026-01-01",
+      "end_date": "2026-01-15",
+      "type": "ポイント還元",
+      "description": "買取・購入ともにポイント2倍！新年のスタートダッシュを応援します。",
+      "is_solicitation": false
+    },
+    {
+      "id": "CP002",
+      "name": "買取20%UPキャンペーン",
+      "start_date": "2026-01-08",
+      "end_date": "2026-01-14",
+      "type": "買取強化",
+      "description": "期間限定で買取価格20%アップ！この機会にぜひ。",
+      "is_solicitation": true
+    }
+  ],
+  "gift_options": [
+    {
+      "id": "G001",
+      "name": "感謝ポイント500P",
+      "type": "ポイント付与",
+      "cost": 500,
+      "description": "日頃の感謝を込めて、500ポイントをプレゼント。",
+      "emotional_value": "high"
+    },
+    {
+      "id": "G002",
+      "name": "おすすめ本リスト（パーソナライズ）",
+      "type": "コンテンツ",
+      "cost": 0,
+      "description": "お客様の購入履歴から、おすすめの本をセレクト。",
+      "emotional_value": "medium"
+    },
+    {
+      "id": "G003",
+      "name": "限定ブックカバー",
+      "type": "グッズ",
+      "cost": 300,
+      "description": "次回購入時にオリジナルブックカバーをプレゼント。",
+      "emotional_value": "high"
+    }
+  ]
+}
+

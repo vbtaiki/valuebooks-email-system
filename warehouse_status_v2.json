@@ -1,0 +1,62 @@
+{
+  "current_date": "2026-01-08",
+  "warehouse_capacity": {
+    "max_daily_processing": 500,
+    "current_staff_available": 8,
+    "staff_efficiency": 0.9,
+    "effective_capacity": 360
+  },
+  "backlog": {
+    "未査定_箱数": 85,
+    "未査定_推定冊数": 1700,
+    "査定中": 320,
+    "発送待ち": 180
+  },
+  "emergency_level": 4,
+  "emergency_description": {
+    "1": "余裕あり - 通常運営",
+    "2": "やや余裕 - 平準化送信",
+    "3": "標準 - バランス重視",
+    "4": "やや緊急 - 送信数増加",
+    "5": "超緊急 - 誰でもいいから送って"
+  },
+  "daily_applications": [
+    {"date": "2026-01-01", "applications": 85, "actual_arrivals": 72},
+    {"date": "2026-01-02", "applications": 92, "actual_arrivals": 78},
+    {"date": "2026-01-03", "applications": 78, "actual_arrivals": 65},
+    {"date": "2026-01-04", "applications": 65, "actual_arrivals": 58},
+    {"date": "2026-01-05", "applications": 58, "actual_arrivals": 52},
+    {"date": "2026-01-06", "applications": 52, "actual_arrivals": 44},
+    {"date": "2026-01-07", "applications": 48, "actual_arrivals": 41}
+  ],
+  "weekly_forecast": [
+    {"date": "2026-01-08", "predicted_applications": 45, "predicted_arrivals": 38, "capacity_usage": 0.28},
+    {"date": "2026-01-09", "predicted_applications": 42, "predicted_arrivals": 35, "capacity_usage": 0.25},
+    {"date": "2026-01-10", "predicted_applications": 38, "predicted_arrivals": 32, "capacity_usage": 0.22},
+    {"date": "2026-01-11", "predicted_applications": 35, "predicted_arrivals": 29, "capacity_usage": 0.20},
+    {"date": "2026-01-12", "predicted_applications": 40, "predicted_arrivals": 33, "capacity_usage": 0.23},
+    {"date": "2026-01-13", "predicted_applications": 48, "predicted_arrivals": 40, "capacity_usage": 0.28},
+    {"date": "2026-01-14", "predicted_applications": 55, "predicted_arrivals": 46, "capacity_usage": 0.32}
+  ],
+  "thresholds": {
+    "閑散期_capacity_under": 0.35,
+    "繁忙期_capacity_over": 0.80,
+    "バックログ危険水準": 200,
+    "emergency_trigger_capacity": 0.30,
+    "emergency_trigger_backlog": 100
+  },
+  "email_budget_formula": {
+    "description": "送信数 = base × (1 - capacity_usage) × emergency_multiplier",
+    "base_daily_emails": 500,
+    "emergency_multipliers": {
+      "1": 0.5,
+      "2": 0.8,
+      "3": 1.0,
+      "4": 1.5,
+      "5": 2.5
+    },
+    "max_daily_emails": 2000,
+    "min_daily_emails": 0
+  }
+}
+

@@ -1,0 +1,38 @@
+{
+  "current_date": "2026-01-08",
+  "warehouse_capacity": {
+    "max_daily_processing": 500,
+    "current_staff_available": 8,
+    "staff_efficiency": 0.9
+  },
+  "backlog": {
+    "未査定_箱数": 145,
+    "未査定_推定冊数": 2900,
+    "査定中": 580,
+    "発送待ち": 320
+  },
+  "daily_applications": [
+    {"date": "2026-01-01", "applications": 85, "actual_arrivals": 72},
+    {"date": "2026-01-02", "applications": 92, "actual_arrivals": 78},
+    {"date": "2026-01-03", "applications": 78, "actual_arrivals": 65},
+    {"date": "2026-01-04", "applications": 65, "actual_arrivals": 58},
+    {"date": "2026-01-05", "applications": 58, "actual_arrivals": 52},
+    {"date": "2026-01-06", "applications": 72, "actual_arrivals": 61},
+    {"date": "2026-01-07", "applications": 88, "actual_arrivals": 74}
+  ],
+  "weekly_forecast": [
+    {"date": "2026-01-08", "predicted_applications": 75, "predicted_arrivals": 63, "capacity_usage": 0.52},
+    {"date": "2026-01-09", "predicted_applications": 68, "predicted_arrivals": 57, "capacity_usage": 0.48},
+    {"date": "2026-01-10", "predicted_applications": 55, "predicted_arrivals": 46, "capacity_usage": 0.38},
+    {"date": "2026-01-11", "predicted_applications": 42, "predicted_arrivals": 35, "capacity_usage": 0.29},
+    {"date": "2026-01-12", "predicted_applications": 38, "predicted_arrivals": 32, "capacity_usage": 0.27},
+    {"date": "2026-01-13", "predicted_applications": 48, "predicted_arrivals": 40, "capacity_usage": 0.33},
+    {"date": "2026-01-14", "predicted_applications": 62, "predicted_arrivals": 52, "capacity_usage": 0.43}
+  ],
+  "thresholds": {
+    "閑散期_capacity_under": 0.45,
+    "繁忙期_capacity_over": 0.80,
+    "バックログ危険水準": 200
+  }
+}
+
