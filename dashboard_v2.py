@@ -333,11 +333,17 @@ def main():
     """, unsafe_allow_html=True)
     
     # APIキー確認（環境変数 or Streamlit secrets）
+    api_key = None
+    
+    # 1. 環境変数から取得
     api_key = os.environ.get('OPENAI_API_KEY')
+    
+    # 2. Streamlit secretsから取得
     if not api_key:
         try:
-            api_key = st.secrets.get('OPENAI_API_KEY')
-        except:
+            if 'OPENAI_API_KEY' in st.secrets:
+                api_key = st.secrets['OPENAI_API_KEY']
+        except Exception:
             pass
     
     if not api_key:
